@@ -1,0 +1,46 @@
+.center {
+    width: 900px;
+    text-align: center;
+}
+
+.thick-container {
+    border: 10px solid black;
+    width: 800px;
+    padding: 5px;
+    background-color: blue;
+}
+
+.mini-container-left {
+    border: 5px solid black;
+    background-color: green;
+    width: 400px;
+    display: inline-block;
+}
+
+.image-container-right {
+    border: 5px solid black;
+    background-image: url('../images/riba.jpg');
+    background-size: 200px 200px;
+    background-repeat: round;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+
+.image-container-left {
+    border: 5px solid black;
+    background-image: url('../images/riba.jpg');
+    background-size: 200px 200px;
+    background-repeat: round;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+
+}
+
+.mini-container-right {
+    display: inline-block;
+    border: 5px solid black;
+    background-color: green;
+    width: 400px;
+}

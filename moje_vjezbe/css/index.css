@@ -1,0 +1,60 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    background-image: url('../images/nails.avif');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.center-menu {
+    background-color: aliceblue;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+}
+
+.item {
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border: 1px solid black;
+    margin: 3px;
+}
+
+.center-menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    display: inline-block;
+}
+
+.center-menu li {
+    display: inline-block; /* Horizontal layout */
+}
+
+
+.center-menu li a {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.center-menu li a:hover {
+    background-color: blueviolet;
+}

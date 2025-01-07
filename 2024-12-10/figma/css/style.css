@@ -1,0 +1,11 @@
+#hero .hero-image {
+    object-fit: cover; 
+    height: calc(100vh - 48px - 56px - 56px);
+    width: 50%;
+    border: 1px solid black;
+    margin-bottom: 56px;
+}
+
+.position-relative {
+    position: relative;
+}

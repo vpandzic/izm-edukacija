@@ -1,0 +1,87 @@
+
+/* Način izračuna dimenzija elementa može se promijeniti pomoću svojstva box-sizing. Ako se na nekom elementu postavi to svojstvo, može se promijeniti način izračuna dimenzija za taj element. content-box: svojstva width i height odnose se samo na širinu sadržaja | border-box: svojstva width i height odnose se na širinu sadržaja, paddinga i margine */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400&display=swap');
+
+body
+{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #3c3c3c;
+	width: 100%;
+	margin: 0; 
+	padding: 0;
+	
+}
+
+* {
+  box-sizing: border-box;
+	
+}
+
+h2
+{
+	
+	padding-left:20px;
+}
+
+div.gallery {
+  border: 5px solid green;
+}
+
+div.gallery:hover {
+  border: 5px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 10px;
+  text-align: center;
+  border: 2px solid red;
+
+}
+
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 25%;
+}
+
+
+@media only screen and (min-width: 992px) {
+  .responsive {
+    width: 25%;
+    margin: 6px 0;
+
+
+padding: 0 6px;
+  float: left;
+  width: 25%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .responsive {
+    width: 100%;
+  }
+  
+  div.gallery {
+  border: 5px solid yellow;
+}
+  
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+

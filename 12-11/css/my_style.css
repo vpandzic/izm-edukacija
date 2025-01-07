@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: "Heebo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #21243D;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.nav-item a {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+}
+
+.active {
+    --bs-nav-link-active: #ffffff;
+    /* <-- Your custom color here */
+    --bs-nav-link-active-bg: #0d6efd;
+    /* <-- Your custom color here */
+}
+
+.navbar-nav .nav-item a.nav-link.active {
+    color: #FF6464;
+}
+
+#hero {
+    min-height: calc(100vh - 62px);
+    display: flex;
+    align-items: center;
+}
+
+#hero img {
+    border-radius: 50%;
+    margin: 34px 0;
+}
+
+#hero h1 {
+    font-size: 44px;
+    font-weight: bold;
+    line-height: 60px;
+    margin-bottom: 40px;
+}
+
+#hero p {
+    margin-bottom: 40px;
+}
+
+#hero a {
+    font-size: 20px;
+    background-color: #FF6464;
+    display: inline-block;
+    padding: 7px 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: rgb(213, 42, 42);
+}
+
+.btn:hover {
+    background-color: rgb(77, 25, 25);
+}
+
+#recent-posts {
+    background-color: lightblue;
+    padding: 40px 0;
+}
+
+#recent-posts .post-home {
+    background-color: white;
+    border-radius: 10px;
+    /* margin: 5px; */
+    padding: 20px 10px;
+}
+
+.post-home a {
+    text-decoration: none;
+    ;
+}
+
+.date:after {
+    content: '|';
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#featured-posts {
+    padding: 40px 0;
+}
+
+.datebox {
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    padding: 2px;
+    margin-right: 20px;
+}
+
+.featured-posts-category {
+    color: gray;
+}
+
+.work-home {
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.work-home .row {
+    display: flex;
+    align-items: center;
+}
+
+#blog-posts h1 {
+    line-height: 60px;
+    margin-bottom: 40px;
+}
+
+footer i {
+    font-size: 30px;
+    width: 30px;
+    color: #21242D;
+    margin: 0 10px 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+.blog-post-home {
+    border-bottom: 1px solid rgb(223, 223, 223);
+    margin-bottom: 30px;
+}
+
+.blog-post-home a {
+    text-decoration: none;
+    color: black;
+}

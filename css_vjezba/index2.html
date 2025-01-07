@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="hr-HR">
+
+<head>
+    <meta name="description" content="technology,ai">
+    <meta name="author" content="Mladen Smrekar Lorem ipsum">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="robots" content="index,follow">
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="5c85b51b-6f56-4613-a39f-f0b2a272f380.png">
+    <link rel="canonical" href="">
+    <link rel="stylesheet" type="text/css" href="stilovi/glavni-stil2.css">
+
+    <title>
+        CSS vjezba
+    </title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td><label for="ime">Ime</label></td>
+            <td><input type="text" id="ime" name="ime" maxlength="20" placeholder="Unesite svoje ime" required></td>
+        </tr>
+        <tr>
+            <td><label for="password">Zaporka</label></td>
+            <td><input type="password" id="password" name="password" maxlength="20" placeholder="Unesite svoju zaporku" required></td>
+        </tr>
+        <tr>
+            <td>Kolicina artikala</td>
+            <td><input type="number" name="kolicanaartikala" min="1" max="10" value="1"></td>
+        </tr>
+        <tr>
+            <td>Broj mobitela</td>
+            <td><input type="tel" name="brojmobitela" value="" maxlength="15" placeholder="+385 9"></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="email" name="email" value="" maxlength="25" placeholder="ime@naziv.domena" required></td>
+        </tr>
+        <tr>
+            <td>Web stranica</td>
+            <td><input type="url" name="webadresa" value="" maxlength="35" placeholder="https://naziv.domena"></td>
+        </tr>
+        <tr>
+            <td>Datum</td>
+            <td><input type="date" name="datum" value="2024-01-01" min="2024-01-01" max="2025-12-31" /></td>
+        </tr>
+        <tr>
+            <td>Pretrazivanje</td>
+            <td><input type="search" name="pretraga" maxlength="50" placeholder="Pretrazite nasu stranicu" /></td>
+        </tr>
+        <tr>
+            <td>Odabir</td>
+            <td><input type="radio" name="dan-u-tjednu" value="pon" checked /> Ponedjeljak <br>
+                <input type="radio" name="dan-u-tjednu" value="uto" /> Utorak <br>
+                <input type="radio" name="dan-u-tjednu" value="sri" /> Srijeda <br>
+                <input type="radio" name="dan-u-tjednu" value="cet" /> Cetvrtak <br>
+                <input type="radio" name="dan-u-tjednu" value="pet" /> Petak <br>
+                <input type="radio" name="dan-u-tjednu" value="sub" /> Subota <br>
+                <input type="radio" name="dan-u-tjednu" value="ned" /> Nedjelja <br>
+            </td>
+        </tr>
+        <tr>
+            <td>Visestruki Odabir</td>
+            <td><input type="checkbox" name="privola" value="gdpr" checked /> Zelim da se GDPR primijeni na mene <br>
+                <input type="checkbox" name="privola" value="cookies" /> Zelim koristiti kolacice <br>
+
+            </td>
+        </tr>
+        <tr>
+            <td>Upload datoteke</td>
+            <td>Osobna iskaznica<br>Diploma</td>
+            <td><input type="file" name="fotografijaosobne" accept=".jpg, .jpeg, .png"> <br>
+                <input type="file" name="fotografijadiploma" accept=".jpg, .jpeg, .png" multiple>
+            </td>
+        </tr>
+        <tr>
+            <td>Odabir zupanije</td>
+            <td>
+                <select name="zupanija">
+                    <option value="GradZagreb">Grad Zagreb</option>
+                    <option value="Zagrebacka">Zagrebacka</option>
+                    <option value="SplitskoDalmatinska">Splitsko-Dalmatinska</option>
+                    <option value="DubrovackoNeretvanska" selected>Dubrovacko-Neretvanska</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Recenzija</td>
+            <td>
+                <textarea name="recenzija" maxlength="1000" placeholder="Vase misljenje o nasoj stranici"></textarea>
+            </td>
+        </tr>
+    </table>
+<fieldset>
+    <legend>Unos osobnih podataka (obavezno)</legend>
+    <label for="ime_fieldset">Upisite svoje ime</label><br>
+    <input type="text" id="ime_fieldset" name="ime" maxlength="15" placeholder="Upisite ime"> <br>
+    <label for="prezime_fieldset">Upisite svoje prezime</label><br>
+    <input type="text" id="prezime_fieldset" name="prezime" maxlength="15" placeholder="Upisite prezime"> <br>
+    <label for="otoci">Koji otok zelite posjetiti</label> <br>
+    <select id="otoci" name="otoci">
+        <optgroup label="Sjeverni Jadran">
+            <option value="rab">Rab</option>
+            <option value="cres">Cres</option>
+        </optgroup>
+        <optgroup label="Srednji Jadran">
+            <option value="iz">Iz</option>
+            <option value="molat">Molat</option>
+        </optgroup>
+    </select>
+</fieldset>
+<button type="reset">Resetiraj</button>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 100;
+    color: #737375;
+    background-color: rgb(209, 230, 250);
+}
+
+ul li {
+    list-style: none;
+    display: list-item;
+
+}
+
+ul li::before {
+    font-family: "Font Awesome 6 free";
+    font-size: 24px;
+    content: "\f058";
+}
+
+li a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+a:visited {
+    color:red;
+}
+
+h1 {
+    font-family: "Noto Serif", serif;
+    font-weight: 400;
+    color: #373438;
+}
+
+h2 {
+    font-family: "Noto Serif", serif;
+    font-weight: 700;
+    color: #373438;
+}
+
+h2::after {
+    display: block;
+    height: 1px;
+    width: 50%;
+    background: black;
+    content: "";
+}
+
+p {
+    color: #373438;
+}
+
+p:hover {
+    color: #000000;
+}
+
+p::first-letter {
+    font-size: 24px;
+    font-family: "Noto Serif", serif;
+    color: black;
+    text-decoration: underline;
+}
+
+.kosi-tekst {
+    font-family: "Noto Serif", serif;
+    font-style: italic;
+    font-weight: 400;
+    color: #737375
+}
+
+.blok {
+    background-color: lightgray;
+    width: 50%;
+    text-align: justify;
+    padding: 10px;
+}
