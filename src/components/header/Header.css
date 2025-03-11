@@ -1,0 +1,22 @@
+.navbar {
+  background-color: white;
+}
+
+.navbar img {
+  width: 24px;
+}
+
+header img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center 40%;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+header h1 {
+  text-align: center;
+  display: block;
+  margin-top: 15px;
+}
