@@ -7,12 +7,13 @@ import PostAuthor from "../../metadata/PostAuthor/PostAuthor";
 
 const Blog = () => {
     const [posts, setPosts] = useState([]);
+    const REACT_APP_URL = process.env.REACT_APP_URL;
 
     useEffect(() => {
-        fetch('https://frontend.internetskimarketing.eu/backend/wp-json/wp/v2/posts?author=13')
+        fetch(REACT_APP_URL + 'wp-json/wp/v2/posts?author=13')
         .then(response => response.json())
         .then(data => setPosts(data))
-    }, []);
+    }, [REACT_APP_URL]);
 
     return (
         <div className="container blog">
