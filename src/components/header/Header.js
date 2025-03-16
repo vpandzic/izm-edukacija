@@ -20,7 +20,9 @@ const Header = () => {
         <div>
             <nav className="navbar navbar-expand-lg">
                 <div className="container">
-                    <a className="navbar-brand" href="#">TransceDENTAL <img src="./img/logo.png" alt="Logo" /></a>
+                <Link className="navbar-brand" to="/">
+                        TransceDENTAL <img src="./img/logo.png" alt="Logo" />
+                    </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -28,11 +30,11 @@ const Header = () => {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Nas i Vas tim zubara</a>
+                        <li className="nav-item">
+                                <Link className="nav-link active" to="/about">Nas i Vas tim zubara</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Povijest ustanove</a>
+                                <Link className="nav-link" to="/history">Povijest ustanove</Link>
                             </li>
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -40,23 +42,23 @@ const Header = () => {
                                     Usluge
                                 </a>
                                 <ul className="dropdown-menu">
-                                    <li><a className="dropdown-item" href="#">Ortodoncija</a></li>
-                                    <li><a className="dropdown-item" href="#">Konzervativna stomatologija</a></li>
-                                    <li><a className="dropdown-item" href="#">Progresivna stomatologija</a></li>
-                                    <li><a className="dropdown-item" href="#">Dijagnostika</a></li>
-                                    <li><a className="dropdown-item" href="#">Prognostika</a></li>
+                                <li><Link className="dropdown-item" to="/services/ortodoncija">Ortodoncija</Link></li>
+                                    <li><Link className="dropdown-item" to="/services/konzervativna">Konzervativna stomatologija</Link></li>
+                                    <li><Link className="dropdown-item" to="/services/progresivna">Progresivna stomatologija</Link></li>
+                                    <li><Link className="dropdown-item" to="/services/dijagnostika">Dijagnostika</Link></li>
+                                    <li><Link className="dropdown-item" to="/services/prognostika">Prognostika</Link></li>
                                     <li><hr className="dropdown-divider" /></li>
-                                    <li><a className="dropdown-item" href="#">Ostale medicinske usluge</a></li>
+                                    <li><Link className="dropdown-item" to="/services/ostale">Ostale medicinske usluge</Link></li>
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Placanje</a>
+                                <Link className="nav-link" to="/payment">Placanje</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Bitno! - za placanje</a>
+                                <Link className="nav-link" to="/important-payment">Bitno! - za placanje</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Registracija</a>
+                                <Link className="nav-link" to="/register">Registracija</Link>
                             </li>
                         </ul>
                         {username ? (<button onClick={logout} className="btn">Welcome {username}</button>) : (<Link to="/login">Prijava</Link>)}

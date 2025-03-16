@@ -1,26 +1,34 @@
 import React from "react";
-import logo from '../../../logo.svg';
+import "./About.css";
 
 const About = () => {
     return (
-        <section id="hero">
-        <div class="container">
-          <div class="row align-items-center text-center text-md-start">
-    
-            <div class="col-md-3 order-md-2 text-md-end">
-              <img src="img/Ellipse1.png" />
-            </div>
-    
-            <div class="col-md-9 order-md-1">
-              <h1>Hi, I am John, <br />Creative Technologist</h1>
-              <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
-                velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-              <a href="#" class="mb-5">Download Resume</a>
-            </div>
-    
-          </div>
+        <div className="about-container">
+            <section id="about">
+                <div className="container">
+                    <h1>O našem timu</h1>
+                    <p>Upoznajte vrhunski tim stomatologa koji se brine o vašem osmijehu.</p>
+
+                    <div className="row">
+                        <div className="col-md-4 team-member">
+                            <img src="img/doktor1.jpeg" alt="Dr. Marko Petrović" />
+                            <h3>Dr. Marko Petrović</h3>
+                            <p>Specijalista protetike s 20 godina iskustva. Stručnjak za estetsku stomatologiju.</p>
+                        </div>
+                        <div className="col-md-4 team-member">
+                            <img src="img/doktor2.jpeg" alt="Dr. Ana Kovačević" />
+                            <h3>Dr. Ana Kovačević</h3>
+                            <p>Specijalist oralne hirurgije, poznata po bezbolnim zahvatima i vrhunskom radu.</p>
+                        </div>
+                        <div className="col-md-4 team-member">
+                            <img src="img/doktor3.jpeg" alt="Dr. Ivan Jurić" />
+                            <h3>Dr. Ivan Jurić</h3>
+                            <p>Ekspert za ortodonciju, koji vraća osmijehe pacijentima svih uzrasta.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-      </section>
     );
 };
 
