@@ -13,12 +13,12 @@ const About = () => {
                         <div className="col-md-4 team-member">
                             <img src="img/doktor1.jpeg" alt="Dr. Marko Petrović" />
                             <h3>Dr. Marko Petrović</h3>
-                            <p>Specijalista protetike s 20 godina iskustva. Stručnjak za estetsku stomatologiju.</p>
+                            <p>Specijalist protetike s 20 godina iskustva. Stručnjak za estetsku stomatologiju.</p>
                         </div>
                         <div className="col-md-4 team-member">
                             <img src="img/doktor2.jpeg" alt="Dr. Ana Kovačević" />
                             <h3>Dr. Ana Kovačević</h3>
-                            <p>Specijalist oralne hirurgije, poznata po bezbolnim zahvatima i vrhunskom radu.</p>
+                            <p>Specijalist oralne kirurgije, poznata po bezbolnim zahvatima i vrhunskom radu.</p>
                         </div>
                         <div className="col-md-4 team-member">
                             <img src="img/doktor3.jpeg" alt="Dr. Ivan Jurić" />
