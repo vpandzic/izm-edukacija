@@ -19,6 +19,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import ProductSingle from './components/pages/shop/ProductSingle';
 import CartPage from './components/pages/shop/CartPage';
 import CheckoutPage from './components/pages/shop/CheckoutPage';
+import History from './components/pages/history/History';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/about" element={<About />} />
           <Route path="/about2" element={<About2 />} />
+          <Route path="/history" element={<History />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/contact2" element={<Contact2 />} />
           <Route path="/blog" element={<Blog />} />
