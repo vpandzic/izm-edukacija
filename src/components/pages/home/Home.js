@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Import Link from React Router
+import Blog from "../../utility/Blog";
 import "./Home.css";
 
 const Home = () => {
@@ -92,7 +93,8 @@ const Home = () => {
 
             {/* News Section */}
             <section id="novosti">
-                <div className="container">
+                <Blog />
+                {/* <div className="container">
                     <div className="row">
                         <div className="col-md-6">
                             <div className="col-md-12 mt-4 mx-2 novosti-box">
@@ -122,7 +124,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </section>
         </div>
     );

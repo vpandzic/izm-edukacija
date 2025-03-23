@@ -20,6 +20,8 @@ import ProductSingle from './components/pages/shop/ProductSingle';
 import CartPage from './components/pages/shop/CartPage';
 import CheckoutPage from './components/pages/shop/CheckoutPage';
 import History from './components/pages/history/History';
+import Services from './components/pages/services/Services';
+import Payment from './components/pages/payment/Payment';
 
 function App() {
   return (
@@ -33,7 +35,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/about2" element={<About2 />} />
           <Route path="/history" element={<History />} />
+          <Route path="/services/:id" element={<Services/>} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/payment" element={<Payment />} />
           <Route path="/contact2" element={<Contact2 />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogSingle />} />

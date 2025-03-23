@@ -3,11 +3,11 @@ import Img from "../../utility/Img"
 
 const History = () => {
 
-    const [history, setHistory] = useState([]);
+    const [history, setHistory] = useState(null);
     const REACT_APP_URL = process.env.REACT_APP_URL;
 
     useEffect(() => {
-        fetch(REACT_APP_URL + 'wp-json/wp/v2/posts?id=294522')
+        fetch(REACT_APP_URL + 'wp-json/wp/v2/posts/294522')
             .then(response => response.json())
             .then(data => setHistory(data))
     }, [REACT_APP_URL]);
@@ -23,10 +23,13 @@ const History = () => {
 
                     <div className="row">
                         <div className="col-md-12">
-                            <Img id={history[0]?.featured_media} size="medium"/>
+                            <h1 dangerouslySetInnerHTML={{ __html: history?.title?.rendered }} />
                         </div>
                         <div className="col-md-12">
-                            <p dangerouslySetInnerHTML={{ __html: history[0]?.content?.rendered }} />
+                            <Img id={history?.featured_media} size="medium" />
+                        </div>
+                        <div className="col-md-12">
+                            <p dangerouslySetInnerHTML={{ __html: history?.content?.rendered }} />
                         </div>
 
                     </div>

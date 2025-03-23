@@ -5,12 +5,23 @@ import Img from "../../utility/Img"
 const About = () => {
 
     const [dentists, setDentists] = useState([]);
+    const [error, setError] = useState(null);
     const REACT_APP_URL = process.env.REACT_APP_URL;
+
 
     useEffect(() => {
         fetch(REACT_APP_URL + 'wp-json/wp/v2/posts?categories=230')
-            .then(response => response.json())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
             .then(data => setDentists(data))
+            .catch(error => {
+                console.error('There was a problem with the fetch operation:', error);
+                setError(error.message);
+            });
     }, [REACT_APP_URL]);
 
     return (
