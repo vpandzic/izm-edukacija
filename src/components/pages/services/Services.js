@@ -42,7 +42,7 @@ const Services = () => {
                         <div className="col-md-12">
                             <Img id={service?.featured_media} size="medium" />
                         </div>
-                        <div className="col-md-12">
+                        <div className="col-md-12 service-content">
                             <p dangerouslySetInnerHTML={{ __html: service?.content?.rendered }} />
                         </div>
 
