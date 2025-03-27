@@ -70,9 +70,10 @@ const Header = () => {
                         ) : (
                             <Link to="/login">Prijava</Link>
                         )}
-                        <form className="d-flex" role="search">
-                            <input className="form-control me-2" type="search" placeholder="Unesite trazeni pojam"
-                                aria-label="Search" />
+                        <form className="d-flex" role="search" action="https://www.google.com/search" method="GET">
+                            <input className="form-control me-2" type="search" name="q" placeholder="Unesite trazeni pojam"
+                                aria-label="Search" required />
+                            <input type="hidden" name="q" value="site:vpandzic.frontend.internetskimarketing.eu" />
                             <button className="btn btn-outline-success" type="submit">Pretrazi</button>
                         </form>
                     </div>
