@@ -41,7 +41,7 @@ const Header = () => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <Link className="nav-link active" to="/about">Nas i Vas tim zubara</Link>
+                                <Link className="nav-link" to="/about">Nas i Vas tim zubara</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/history">Povijest ustanove</Link>
@@ -68,7 +68,7 @@ const Header = () => {
                         {username ? (
                             <button onClick={logout} className="btn">Dobrodosao {username} !</button>
                         ) : (
-                            <Link to="/login">Prijava</Link>
+                            <Link className="nav-link" to="/login">Prijava</Link>
                         )}
                         <form className="d-flex" role="search" action="https://www.google.com/search" method="GET">
                             <input className="form-control me-2" type="search" name="q" placeholder="Unesite trazeni pojam"
