@@ -11,7 +11,6 @@ const Payment = () => {
         const token = localStorage.getItem('token');
         if (token) {
             setIsLoggedIn(true);
-            // Fetch categories for payment
             fetch(REACT_APP_URL + 'wp-json/wp/v2/posts?categories=232')
                 .then(response => response.json())
                 .then(data => setCategories(data))
