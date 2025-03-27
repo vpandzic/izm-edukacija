@@ -48,12 +48,6 @@
 }
 
 @media (min-width: 768px) {
-    .team-grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
 
     .team-member {
         width: 30%;
