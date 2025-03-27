@@ -12,9 +12,7 @@ const Home = () => {
                     <div className="row">
                         <div className="col-md-4">
                             <div className="col-md-12 mt-4 mx-2 content-box">
-                                <Link to="/dijagnostika">
-                                    <h2>Dijagnostika</h2>
-                                </Link>
+                                <h2>Dijagnostika</h2>
                                 <img src="img/narucite-se.jpeg" alt="Dijagnostika" />
                                 <span className="content-box-text">
                                     Specijalna ordinacija TransceDENTAL nudi vam širok dijapazon usluga vezanih za zube, počevši
@@ -25,9 +23,7 @@ const Home = () => {
 
                         <div className="col-md-4">
                             <div className="col-md-12 mt-4 mx-2 content-box">
-                                <Link to="/zahvati">
-                                    <h2>Zahvati na zubima</h2>
-                                </Link>
+                                <h2>Zahvati na zubima</h2>
                                 <img src="img/dentist-team.jpeg" alt="Zahvati na zubima" />
                                 <span className="content-box-text">
                                     Obučeni smo za veliku većinu stomatoloških zahvata potrebnih za zdravi osmijeh, a odnedavno
@@ -39,9 +35,7 @@ const Home = () => {
 
                         <div className="col-md-4">
                             <div className="col-md-12 mt-4 mx-2 content-box">
-                                <Link to="/naplata">
-                                    <h2>Naplata</h2>
-                                </Link>
+                                <h2>Naplata</h2>
                                 <img src="img/za-nove-pacijente.jpeg" alt="Naplata" />
                                 <span className="content-box-text">
                                     Kao najbitniju komponentu iskrenog osmijeha, prihvaćamo sve oblike plaćanja i veoma smo
@@ -94,37 +88,6 @@ const Home = () => {
             {/* News Section */}
             <section id="novosti">
                 <Blog />
-                {/* <div className="container">
-                    <div className="row">
-                        <div className="col-md-6">
-                            <div className="col-md-12 mt-4 mx-2 novosti-box">
-                                <img src="img/zubi-rad.jpeg" alt="Novosti iz svijeta zubarstva" />
-                                <p>Novosti iz svijeta zubarstva</p>
-                            </div>
-                        </div>
-                        <div className="col-md-6">
-                            <div className="col-md-12 mt-4 mx-2 novosti-box">
-                                <img src="img/zubi-pokvareni.jpeg" alt="Pokvareni zubi" />
-                                <p>Pokvareni zubi: Potrebno liječiti ili samo zavjera zubarskog lobija?</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="row">
-                        <div className="col-md-6">
-                            <div className="col-md-12 mt-4 mx-2 novosti-box">
-                                <img src="img/zubi-macka.jpeg" alt="Veterinarska stomatologija" />
-                                <p>Veliko istraživanje: primjena veterinarske stomatologije na ljudskim pacijentima</p>
-                            </div>
-                        </div>
-                        <div className="col-md-6">
-                            <div className="col-md-12 mt-4 mx-2 novosti-box">
-                                <img src="img/zubi-stolica.jpeg" alt="Zubarske stolice" />
-                                <p>10 zubarskih stolica zbog kojih vas konkurencija mrzi!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
             </section>
         </div>
     );
