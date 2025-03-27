@@ -16,10 +16,10 @@ const Footer = () => {
                     <div className="col-md-4">
                         <h5>Korisni linkovi</h5>
                         <ul className="list-unstyled">
-                            <li><a href="/about">O nama</a></li>
-                            <li><a href="/services">Usluge</a></li>
-                            <li><a href="/contact">Kontakt</a></li>
-                            <li><a href="/faq">Često postavljana pitanja</a></li>
+                            <li><a href="#">O nama</a></li>
+                            <li><a href="#">Usluge</a></li>
+                            <li><a href="#">Kontakt</a></li>
+                            <li><a href="#">Često postavljana pitanja</a></li>
                         </ul>
                     </div>
                     <div className="col-md-4">
@@ -29,9 +29,9 @@ const Footer = () => {
                         <p>Nedjelja: Zatvoreno</p>
                         <h5>Pratite nas</h5>
                         <div>
-                            <a href="#" className="text-dark mr-2"><i className="fab fa-facebook fa-lg"></i></a>
-                            <a href="#" className="text-dark mr-2"><i className="fab fa-twitter fa-lg"></i></a>
-                            <a href="#" className="text-dark mr-2"><i className="fab fa-instagram fa-lg"></i></a>
+                            <a href="#"><img src='img/twitter.png' className='social-links'/></a>
+                            <a href="#"><img src='img/facebook.png' className='social-links'/></a>
+                            <a href="#"><img src='img/instagram.png' className='social-links'/></a>
                         </div>
                     </div>
                 </div>
